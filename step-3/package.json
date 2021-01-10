@@ -1,0 +1,38 @@
+{
+  "name": "electron-autoupdate-step-3",
+  "version": "3.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron index.js",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EveCoffee/electron-autoupdate-demo.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-updater": "^4.3.5"
+  },
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "com.evecoffee.electron-autoupdate",
+    "mac": {
+      "publish": [
+        "github"
+      ],
+      "target": {
+        "target": "default",
+        "arch": [
+          "arm64"
+        ]
+      }
+    }
+  }
+}

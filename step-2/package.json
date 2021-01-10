@@ -1,0 +1,28 @@
+{
+  "name": "electron-autoupdate-step-2",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "electron index.js",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "com.evecoffee.electron-autoupdate",
+    "mac": {
+      "target": {
+        "target": "default",
+        "arch": [
+          "arm64"
+        ]
+      }
+    }
+  }
+}
